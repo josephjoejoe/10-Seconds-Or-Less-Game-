@@ -17,32 +17,29 @@ public class PlayerController : MonoBehaviour
     {
         Vector2 vel = new Vector2(0, 0);
 
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             vel.y = speed;
         }
 
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             vel.x = speed;
         }
 
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
             vel.y -= speed;
         }
 
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             vel.x -= speed;
         }
 
         RB.linearVelocity = vel;
 
-        //if(tag.Equals("Coin") = null)
-        //{
-            
-        //}
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

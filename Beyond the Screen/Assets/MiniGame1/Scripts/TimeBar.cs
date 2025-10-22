@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TimeBar : MonoBehaviour
 {
@@ -29,6 +30,7 @@ public class TimeBar : MonoBehaviour
         {
             timeBar.fillAmount = 0;
             Debug.Log("I lose oh no");
+            SceneManager.LoadScene(2);
         }
     }
 }
