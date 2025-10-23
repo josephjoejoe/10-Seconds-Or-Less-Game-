@@ -289,6 +289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController1
   speed: 6
+  timer: 10
 --- !u!1 &267464852
 GameObject:
   m_ObjectHideFlags: 0
@@ -1162,8 +1163,8 @@ Transform:
   m_GameObject: {fileID: 2093050976}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.43, y: -2.88, z: 0}
-  m_LocalScale: {x: 9.9482565, y: 10.726658, z: 1}
+  m_LocalPosition: {x: 26.8339, y: -2.88, z: 0}
+  m_LocalScale: {x: 22.755642, y: 10.726658, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 267464853}

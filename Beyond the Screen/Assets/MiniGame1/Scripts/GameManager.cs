@@ -7,9 +7,9 @@ public class GameManager : MonoBehaviour
     public TMP_Text ScoreText;
     public int Score;
 
-    public bool addedScore;
+    //public bool addedScore;
 
-    public GameObject coinGate;
+    //public GameObject coinGate;
     public static GameManager instance;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -30,24 +30,5 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         ScoreText.text = "Score:" + Score;
-
-        GameObject[] coins = GameObject.FindGameObjectsWithTag("Coin");
-
-        if(coins.Length == 0 && addedScore == false)
-        {
-            Score += 250;
-            addedScore = true;
-            SceneManager.LoadScene(1);
-        }
-
-        if (coins.Length == 1)
-        {
-            Destroy(coinGate); 
-        }
-    }
-
-    public void RestartGame()
-    {
-        SceneManager.LoadScene(0);
     }
 }

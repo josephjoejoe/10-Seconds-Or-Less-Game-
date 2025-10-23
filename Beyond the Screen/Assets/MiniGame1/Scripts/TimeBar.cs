@@ -19,7 +19,7 @@ public class TimeBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(timeLeft > 0)
+        if (timeLeft > 0)
         {
             timeLeft -= Time.deltaTime;
 
@@ -32,5 +32,10 @@ public class TimeBar : MonoBehaviour
             Debug.Log("I lose oh no");
             SceneManager.LoadScene(2);
         }
+    }
+
+    public void ResetTimer()
+    {
+        timeLeft = totalTime;
     }
 }

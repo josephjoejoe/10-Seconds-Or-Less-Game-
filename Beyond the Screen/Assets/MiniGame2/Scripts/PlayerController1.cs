@@ -6,6 +6,9 @@ public class PlayerController1 : MonoBehaviour
     public float speed;
 
     Rigidbody2D RB;
+    GameManager gm;
+
+    public float timer;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -39,6 +42,15 @@ public class PlayerController1 : MonoBehaviour
         }
 
         RB.linearVelocity = vel;
+
+        if (timer > 0)
+        {
+            timer -= Time.deltaTime;
+            if (timer < 0)
+            {
+                gm.Score += 250;
+            }
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
