@@ -43,13 +43,14 @@ public class PlayerController1 : MonoBehaviour
 
         RB.linearVelocity = vel;
 
-        if (timer > 0)
+        timer -= Time.deltaTime;
+
+        if (timer < 1)
         {
-            timer -= Time.deltaTime;
-            if (timer < 0)
-            {
-                gm.Score += 250;
-            }
+            //gm.Score += 250;
+            SceneManager.LoadScene(3);
+            Debug.Log("I Win");
+            FindFirstObjectByType<TimeBar>().ResetTimer();
         }
     }
 

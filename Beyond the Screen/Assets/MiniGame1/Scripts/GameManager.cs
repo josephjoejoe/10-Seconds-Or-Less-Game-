@@ -7,9 +7,6 @@ public class GameManager : MonoBehaviour
     public TMP_Text ScoreText;
     public int Score;
 
-    //public bool addedScore;
-
-    //public GameObject coinGate;
     public static GameManager instance;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -18,7 +15,6 @@ public class GameManager : MonoBehaviour
         if(instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
         }
         else
         {
