@@ -6,10 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MiniGame1Hint.unity
+    guid: a8b7e155be06d4cc3be6d1d2a568f5b7
+  - enabled: 1
     path: Assets/Scenes/MiniGame1(CollectCoins).unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/MiniGame2(DontTouch)).unity
+    path: Assets/Scenes/MiniGame2(DontTouch).unity
     guid: e79392f22d1114da3a7527120c827b75
   - enabled: 1
     path: Assets/Scenes/GameOverScreen.unity
@@ -20,6 +23,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WinScene.unity
     guid: 41bde7e446d3a4989a99b2bcd967d74d
+  - enabled: 1
+    path: Assets/Scenes/MiniGame2Hint.unity
+    guid: 9ad01e939076a4bbdb0d1ac591d1508e
+  - enabled: 1
+    path: Assets/Scenes/3DMiniGame1Hint.unity
+    guid: cee5ca0aa66f0486da9c350bf350a29b
+  - enabled: 1
+    path: Assets/Scenes/StoryCutScene1.unity
+    guid: 3fc894e38b763421d8ce9aa562add9ef
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -22,7 +22,7 @@ public class MiniGame1 : MonoBehaviour
         {
             gm.Score += 250;
             addedScore = true;
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(6);
             FindFirstObjectByType<TimeBar>().ResetTimer();
         }
 

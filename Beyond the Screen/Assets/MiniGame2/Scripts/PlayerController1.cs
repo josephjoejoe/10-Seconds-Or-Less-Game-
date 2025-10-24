@@ -45,10 +45,10 @@ public class PlayerController1 : MonoBehaviour
 
         timer -= Time.deltaTime;
 
-        if (timer < 1)
+        if (timer < 0)
         {
             //gm.Score += 250;
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(8);
             Debug.Log("I Win");
             FindFirstObjectByType<TimeBar>().ResetTimer();
         }
@@ -58,7 +58,7 @@ public class PlayerController1 : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("MovingBox"))
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
             Destroy(gameObject);
             Debug.Log("Im dead");
         }

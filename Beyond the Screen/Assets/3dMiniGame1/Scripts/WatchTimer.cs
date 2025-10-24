@@ -29,7 +29,7 @@ public class WatchTimer : MonoBehaviour
         {
             watchTimeCircle.fillAmount = 0;
             Debug.Log("I lose oh no");
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
     }
 
